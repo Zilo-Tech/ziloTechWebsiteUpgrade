@@ -480,6 +480,13 @@ section {
   transition: ease-in-out 0.3s;
 }
 
+@media (max-width: 768px) {
+  .pic {
+    min-width: 300px;
+  }
+}
+
+
 .team .member:hover {
   transform: translateY(-10px);
 }

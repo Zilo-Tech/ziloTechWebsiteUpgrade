@@ -482,7 +482,9 @@ section {
 
 @media (max-width: 768px) {
   .pic {
-    min-width: 300px;
+    margin:auto;
+    padding-right: 50px;
+    min-width: 350px;
   }
 }
 

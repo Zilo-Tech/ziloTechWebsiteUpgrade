@@ -1,0 +1,111 @@
+<div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h3>Contact Us</h3>
+      <p>
+        For inquiries, collaborations, or to discuss how ZiloTech can tailor innovative technology solutions to meet your business needs, please don't hesitate to get in touch with us.
+        We look forward to connecting with you and exploring the endless possibilities that ZiloTech can bring to your business.
+      </p>
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>Bambili, Bamenda, Cameroon</p>
+          </div>
+  
+          <div class="email">
+            <a href="mailto:zilotechnologies@gmail.com">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>zilotechnologies@gmail.com</p>
+            </a>
+          </div>
+  
+          <div class="phone">
+            <a href="tel:+237681775574">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+237 681775574</p>
+            </a>
+          </div>
+  
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.05822482753103!2d10.16998064927145!3d5.9303391789132665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105f16802155d9a9%3A0xb365cfb1a549675d!2sUniversity%20of%20Bamenda!5e0!3m2!1sen!2scm!4v1705875263722!5m2!1sen!2scm"
+            frameborder="0"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            style="border: 0; width: 100%; height: 290px"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+  
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form
+          method="POST"
+          
+          role="form"
+          class="contact-form"
+          id="contact-form"
+        >
+          {% csrf_token %}
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <div class="my-3">
+            <div id="error-message" class="error-message">
+              Message not sent
+            </div>
+            <div id="sent-message" class="sent-message">
+              Your message has been sent. Thank you!
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

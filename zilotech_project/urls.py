@@ -20,5 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Core_app.urls')),  # Pointing to your app's urls
+    path('dashboard/', include('AdminDashboard.urls')),
+
 ]
 
